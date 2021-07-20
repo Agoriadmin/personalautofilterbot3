@@ -23,7 +23,7 @@ db = Database()
 
 
 @Client.on_callback_query(filters.regex(r"navigate\((.+)\)"), group=2)
-async def cb_navg(bot, update: CallbackQue
+async def cb_navg(bot, update: CallbackQuery):
     """
     A Callback Funtion For The Next Button Appearing In Results
     """
@@ -1601,14 +1601,14 @@ async def cb_about(bot, update: CallbackQuery):
     text=f"<i><u>Bot's Status</u></i>\n"
     text+=f"\n<b><i>Bot's Uptime:</i></b> <code>{time_formatter(time.time() - start_uptime)}</code>\n"
     text+=f"\n<b><i>Bot Funtion:</i></b> <i>Auto Filter Files</i>\n"
-    text+=f"""\n<b><i>Bot Support:</i></b> <a href="https://t.me/agoribotz">@agorimovies</a>\n"""
-    text+="""\n<b><i>Source Code:</i></b> <a href="https://github.com">Source</a>"""
+    text+=f"""\n<b><i>Bot Support:</i></b> <a href="https://t.me/Agorimovies">@agorihome</a>\n"""
+    text+="""\n<b><i>Source Code:</i></b> <a href="https://github.com/Agoriadmin/personalautofilterbot3">Source</a>"""
 
     buttons = [
         [
             InlineKeyboardButton
                 (
-                    "My Dev ⚡", url="https://t.me/AlbertEinstein_TG"
+                    "My Dev ⚡", url="https://t.me/personal_privetbot1"
                 ),
                 
             InlineKeyboardButton
@@ -1639,8 +1639,8 @@ async def callback_data(bot, update: CallbackQuery):
 
     if query_data == "start":
         buttons = [[
-            InlineKeyboardButton('My Dev 👨‍🔬', url='https://t.me/personal_privetbot1'),
-            InlineKeyboardButton('Source Code 🧾', url ='https://github.com')
+            InlineKeyboardButton('My Boss 👨‍🔬', url='https://t.me/personal_privetbot1'),
+            InlineKeyboardButton('Source Code 🧾', url ='https://github.com/Agoriadmin/personalautofilterbot3')
         ],[
             InlineKeyboardButton('Support 🛠', url='https://t.me/agorihome')
         ],[
@@ -1707,4 +1707,3 @@ def time_formatter(seconds: float) -> str:
         ((str(minutes) + "m, ") if minutes else "") + \
         ((str(seconds) + "s") if seconds else "")
     return tmp
-

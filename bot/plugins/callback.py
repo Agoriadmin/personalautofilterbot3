@@ -23,7 +23,7 @@ db = Database()
 
 
 @Client.on_callback_query(filters.regex(r"navigate\((.+)\)"), group=2)
-async def cb_navg(bot, update: CallbackQuery):
+async def cb_navg(bot, update: CallbackQue
     """
     A Callback Funtion For The Next Button Appearing In Results
     """
@@ -1601,8 +1601,8 @@ async def cb_about(bot, update: CallbackQuery):
     text=f"<i><u>Bot's Status</u></i>\n"
     text+=f"\n<b><i>Bot's Uptime:</i></b> <code>{time_formatter(time.time() - start_uptime)}</code>\n"
     text+=f"\n<b><i>Bot Funtion:</i></b> <i>Auto Filter Files</i>\n"
-    text+=f"""\n<b><i>Bot Support:</i></b> <a href="https://t.me/CrazyBotszGrp">@CrazyBotszGrp</a>\n"""
-    text+="""\n<b><i>Source Code:</i></b> <a href="https://github.com/CrazyBotsz/Adv-Filter-Bot-V2">Source</a>"""
+    text+=f"""\n<b><i>Bot Support:</i></b> <a href="https://t.me/agoribotz">@agorimovies</a>\n"""
+    text+="""\n<b><i>Source Code:</i></b> <a href="https://github.com">Source</a>"""
 
     buttons = [
         [
@@ -1639,10 +1639,10 @@ async def callback_data(bot, update: CallbackQuery):
 
     if query_data == "start":
         buttons = [[
-            InlineKeyboardButton('My Dev 👨‍🔬', url='https://t.me/AlbertEinstein_TG'),
-            InlineKeyboardButton('Source Code 🧾', url ='https://github.com/CrazyBotsz/Adv-Filter-Bot-V2')
+            InlineKeyboardButton('My Dev 👨‍🔬', url='https://t.me/personal_privetbot1'),
+            InlineKeyboardButton('Source Code 🧾', url ='https://github.com')
         ],[
-            InlineKeyboardButton('Support 🛠', url='https://t.me/CrazyBotszGrp')
+            InlineKeyboardButton('Support 🛠', url='https://t.me/agorihome')
         ],[
             InlineKeyboardButton('Help ⚙', callback_data="help")
         ]]

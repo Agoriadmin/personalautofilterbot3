@@ -12,7 +12,7 @@
   </a>  
 </p>
 
-__This Is Just An Simple Advance Auto Filter Bot Complete Rewritten Version Of [Adv-Filter-Bot](https://github.com/CrazyBotsz/Adv-Auto-Filter-Bot)..__
+__This Is Just An Simple Advance Auto Filter Bot Complete Rewritten Version Of [Adv-Filter-Bot](https://github.com/agoriadmin/personalautofilterbot3)..__
 
 __Just Sent Any Text As Query It Will Search For All Connected Chat's Files In Its MongoDB And Reply You With The Message Link As A Button__
 
@@ -21,7 +21,7 @@ __Just Sent Any Text As Query It Will Search For All Connected Chat's Files In I
 
 **__How To Use Me!?__**
 
-* -> Add me to any group and make me admin<br>
+* -> You add me in your group <br>
 * -> Add me to your channel as admin with full previlages
 
 **Bot Commands (Works Only In Groups) :**
@@ -92,7 +92,7 @@ python3 -m bot
 </details>
 
 ## Support   
-Join Our [Telegram Group](https://www.telegram.dog/CrazyBotszGrp) For Support/Assistance And Our [Channel](https://www.telegram.dog/CrazyBotsz) For Updates.   
+Join Our [Telegram Group](https://www.telegram.dog/agorimovies) For Support/Assistance And Our [Channel](https://www.telegram.dog/agorihome) For Updates.   
    
 Report Bugs, Give Feature Requests There..   
 Do Fork And Star The Repository If You Liked It.
@@ -107,4 +107,4 @@ Selling The Codes To Other People For Money Is *Strictly Prohibited*.
 
  - Thanks To Dan For His Awsome [Libary](https://github.com/pyrogram/pyrogram)
  - Thanks To SpEcHiDe For His Awesome [DeleteMessagesRoBot](https://github.com/SpEcHiDe/DeleteMessagesRoBot)
- - [Thanks To Me 👀](https://github.com/AlbertEinsteinTG)
+ - [Thanks To Me 👀](https://github.com/agoriadmin)

@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# (c) @Agoriadmin
+# (c) @©personal robot 
 
 from pyrogram import filters, Client
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
-from bot import Translation, LOGGER # pylint: disable=import-error
+from bot import Translation # pylint: disable=import-error
 from bot.database import Database # pylint: disable=import-error
 
 db = Database()
@@ -24,33 +24,75 @@ async def start(bot, update):
             return
         
         caption = file_caption if file_caption != ("" or None) else ("<code>" + file_name + "</code>")
-        try:
-            await update.reply_cached_media(
-                file_id,
-                quote=True,
-                caption = caption,
+        
+        if file_type == "document":
+        
+            await bot.send_document(
+                chat_id=update.chat.id,
+                document = file_id,
+                caption = "Thankyou For Using Our Service Please Support And Share Our Channel And Group Link To Your Friends  \n @agorimovies \n @mv_mania \n @agorihome",
+                parse_mode="html",
+                reply_to_message_id=update.message_id,
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [
+                            InlineKeyboardButton
+                                (
+                                    '📵 Developer 📵', url="https://t.me/personal_privetbot1"
+                                )
+                        ]
+                    ]
+                )
+            )
+
+        elif file_type == "video":
+        
+            await bot.send_video(
+                chat_id=update.chat.id,
+                video = file_id,
+                caption = f"{file_name} \n @agorimovies \n @mv_mania \n @agorihome",
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton
                                 (
-                                    '😇 Developer 😇', url="https://t.me/personal_privetbot1"
+                                    '💙 Developer 💙', url="https://t.me/personal_privetbot1"
                                 )
                         ]
                     ]
                 )
             )
-        except Exception as e:
-            await update.reply_text(f"<b>Error:</b>\n<code>{e}</code>", True, parse_mode="html")
-            LOGGER(__name__).error(e)
+            
+        elif file_type == "audio":
+        
+            await bot.send_audio(
+                chat_id=update.chat.id,
+                audio = file_id,
+                caption = f"{file_name} \n @agorimovies \n @mv_mania",
+                parse_mode="html",
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [
+                            InlineKeyboardButton
+                                (
+                                    '🤗Developer🤗', url="https://t.me/personal_privetbot1"
+                                )
+                        ]
+                    ]
+                )
+            )
+
+        else:
+            print(file_type)
+        
         return
 
     buttons = [[
-        InlineKeyboardButton('Developers', url='https://t.me/personal_privetbot1'),
-        InlineKeyboardButton('Source Code 🧾', url ='https://github.com/Agoriadmin/personalautofilterbot3')
+        InlineKeyboardButton('🤗Developers🤗', url='https://t.me/agorimovies'),
+        InlineKeyboardButton('📃 Source Code 🧾', url ='https://github.com/CrazyBotsz/Adv-Auto-Filter-Bot-V2')
     ],[
-        InlineKeyboardButton('Support 🛠', url='https://t.me/agorimovies')
+        InlineKeyboardButton('Support 🛠', url='https://t.me/agorihome')
     ],[
         InlineKeyboardButton('Help ⚙', callback_data="help")
     ]]
@@ -104,3 +146,4 @@ async def about(bot, update):
         parse_mode="html",
         reply_to_message_id=update.message_id
     )
+    

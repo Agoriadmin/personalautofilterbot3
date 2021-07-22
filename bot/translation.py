@@ -10,7 +10,7 @@ class Translation(object):
 Just can't Add Me To Your Group And Channel And Connect Them And See My Pevers 🔥🔥😝
 
 For More Details Click Help Button Below..
-@agoriadmin
+@agorimovies 
 </i>"""    
     
     HELP_TEXT = """
@@ -54,5 +54,5 @@ For More Details Click Help Button Below..
 
 <b>➥ Library</b> : <i><a href="https://docs.pyrogram.org">Pyrogram Asyncio 1.13.0 </a></i>
 
-<b>➥ Source Code</b> : <i><a href="https://github.com/AlbertEinsteinTG/Adv-Auto-Filter-Bot">Click Me</a></i>
+<b>➥ Source Code</b> : <i><a href="https://github.com/Agoriadmin/Personalautofilterbot3">Click Me</a></i>
 """

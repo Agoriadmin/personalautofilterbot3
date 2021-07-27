@@ -31,7 +31,7 @@ async def start(bot, update):
                 chat_id=update.chat.id,
                 document = file_id,
                 caption = "Thankyou For Using Our Service Please Support And Share Our Channel And Group Link To Your Friends \n\n @agorimovies \n @mv_mania \n @agorihome \n @agoriseries",
-                font_color="<#0A6E2B></font>"
+              
                 parse_mode="html",
                 reply_to_message_id=update.message_id,
                 reply_markup=InlineKeyboardMarkup(

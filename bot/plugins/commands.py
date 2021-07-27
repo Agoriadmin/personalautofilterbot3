@@ -30,7 +30,7 @@ async def start(bot, update):
             await bot.send_document(
                 chat_id=update.chat.id,
                 document = file_id,
-                caption = "Thankyou For Using Our Service Please Support And Share Our Channel And Group Link To Your Friends \n\n @agorimovies \n @mv_mania \n @agorihome \n @agoriseries",
+                caption = "Thankyou For Using Our Service Please Support And Share Our Channel And Group Link To Your Friends \n\n @agorimovies 👈\n @mv_mania 👈 \n @agorihome 👈\n @agoriseries 👈",
               
                 parse_mode="html",
                 reply_to_message_id=update.message_id,
